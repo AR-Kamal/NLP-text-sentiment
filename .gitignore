@@ -14,4 +14,4 @@ venv/
 
 # My specific exclusions
 .venv/
-
+*.csv
