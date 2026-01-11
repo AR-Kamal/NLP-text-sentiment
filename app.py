@@ -18,16 +18,24 @@ from nltk.stem import WordNetLemmatizer
 # Download required NLTK data (only needed once)
 @st.cache_resource
 def download_nltk_data():
+    """Download required NLTK data"""
+    import nltk
+    
+    # Download all required NLTK packages
     try:
-        nltk.data.find('tokenizers/punkt')
-        nltk.data.find('corpora/stopwords')
-        nltk.data.find('corpora/wordnet')
-    except LookupError:
-        nltk.download('punkt')
-        nltk.download('stopwords')
-        nltk.download('wordnet')
+        nltk.download('punkt', quiet=True)
+        nltk.download('punkt_tab', quiet=True)  # New tokenizer format
+        nltk.download('stopwords', quiet=True)
+        nltk.download('wordnet', quiet=True)
+        nltk.download('omw-1.4', quiet=True)
+        return True
+    except Exception as e:
+        st.error(f"Error downloading NLTK data: {e}")
+        return False
 
-download_nltk_data()
+# Download NLTK data on startup
+if download_nltk_data():
+    st.success("✓ NLTK data loaded")
 
 # Initialize lemmatizer and stopwords
 lemmatizer = WordNetLemmatizer()
