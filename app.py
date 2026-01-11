@@ -1,3 +1,11 @@
+"""
+Sentiment Analysis Web Application
+Built with Streamlit
+
+Author: Your Name
+Date: January 2026
+"""
+
 import streamlit as st
 import pickle
 import re
