@@ -1,17 +1,17 @@
-# Sentiment Analysis Web Application 🎭
+# Sentiment Analysis Web Application
 
 A beautiful web application for predicting sentiment of product reviews using Machine Learning.
 
-## Features ✨
+## Features
 
-- 🔵 **Naive Bayes Classifier** with probability scores
-- 🟢 **Support Vector Machine (SVM)** predictions
-- 📊 Real-time sentiment analysis
-- 🎨 Beautiful, user-friendly interface
-- 📥 Export results functionality
-- 📝 Example reviews for quick testing
+- **Naive Bayes Classifier** with probability scores
+- **Support Vector Machine (SVM)** predictions
+- Real-time sentiment analysis
+- Beautiful, user-friendly interface
+- Export results functionality
+- Example reviews for quick testing
 
-## Installation 🚀
+## Installation
 
 ### Step 1: Install Dependencies
 
@@ -37,7 +37,7 @@ streamlit run app.py
 
 The app will automatically open in your browser at `http://localhost:8501`
 
-## Usage 📝
+## Usage
 
 1. **Enter a review** in the text area
 2. **Click "Analyze Sentiment"** button
@@ -45,7 +45,7 @@ The app will automatically open in your browser at `http://localhost:8501`
 4. **Compare results** between Naive Bayes and SVM
 5. **Download results** as a text file
 
-## Quick Examples 🎯
+## Quick Examples
 
 Try these example reviews:
 
@@ -61,7 +61,7 @@ Try these example reviews:
 - "It's okay, nothing special"
 - "Average product, decent price"
 
-## How It Works 🔧
+## How It Works
 
 1. **Text Preprocessing:**
    - Lowercase conversion
@@ -105,20 +105,7 @@ pip install streamlit
 ```bash
 streamlit run app.py --server.port 8502
 ```
-
-## File Structure 📁
-
-```
-project/
-├── app.py                      # Main Streamlit application
-├── requirements.txt            # Python dependencies
-├── tfidf_vectorizer.pkl       # TF-IDF model
-├── naive_bayes_model.pkl      # Naive Bayes model
-├── svm_model.pkl              # SVM model
-└── label_encoder.pkl          # Label encoder
-```
-
-## Deployment 🌐
+## Deployment
 
 ### Deploy to Streamlit Cloud (Free!)
 
@@ -152,34 +139,14 @@ heroku create your-app-name
 git push heroku main
 ```
 
-## Screenshots 📸
-
-*Add screenshots of your app here after running it!*
-
-## Assignment Details 📚
-
-**Course:** CCS3153 Natural Language Processing  
-**Institution:** AlBukhari International University  
-**Semester:** 1 2024/2025  
-**Date:** January 2026  
-
-## Author ✍️
-
-**Your Name**  
-**Student ID**  
-**Email**  
-
 ## License 📄
 
 This project is created for educational purposes as part of the NLP course assignment.
 
-## Acknowledgments 🙏
+## Acknowledgments
 
 - Dataset: E-commerce product reviews (171,379 reviews)
 - Framework: Streamlit
 - ML Libraries: scikit-learn, NLTK
 - Models: Naive Bayes, SVM
 
----
-
-**Enjoy analyzing sentiments!** 😊😞😐
