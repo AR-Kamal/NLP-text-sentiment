@@ -1,6 +1,7 @@
 # Sentiment Analysis Web Application
 
 A beautiful web application for predicting sentiment of product reviews using Machine Learning.
+Demo: https://nlp-text-sentiment-n6tsd5shwofqsvksyjuivb.streamlit.app/
 
 ## Features
 
